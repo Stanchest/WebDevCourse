@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathon Registration</title>
+</head>
+
+<body>
+    <h1>Race Registration!</h1>
+    <!-- Create form -->
+    <Form action="/register">
+        <!-- First name label and input -->
+        <label for="first">First Name</label>
+        <input type="text" name="first" id="first" placeholder="Enter first name" required>
+        <!-- Last name label and input -->
+        <label for="last">Last Name</label>
+        <input type="text" name="last" id="last" placeholder="Enter last name" required>
+
+        <p>Select a Race:</p>
+
+        <div>
+            <div> <!-- Fun Run 5k input and label -->
+                <input type="radio" name="race" id="fun" value="fun">
+                <label for="fun">Fun Run 5k</label>
+            </div>
+            <div> <!-- Half Marathon input and label -->
+                <input type="radio" name="race" id="half" value="half">
+                <label for="half">Half Marathon</label>
+            </div>
+            <div> <!-- Full Marathon input and label -->
+                <input type="radio" name="race" id="full" value="full">
+                <label for="full">Full Marathon</label>
+            </div>
+        </div>
+        <!-- Email label and input -->
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        <!-- Password label and input -->
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+
+        <div> <!-- Age select -->
+            <label for="age">Select Age Group</label>
+            <select name="age" id="age">
+                <option value="kids">under 18</option>
+                <option value="ya">18-30</option>
+                <option value="adults">30-50</option>
+                <option value="seniors">50+</option>
+            </select>
+        </div>
+        <button type="submit">Register!</button> <!-- Submission button -->
+    </Form>
+</body>
+
+</html>
+
+<!-- form surrounding everythihng
+ first and last name, text, required
+ label and inputs matched
+ select a race
+ 3 radio buttons for race length
+ label input matched
+ email and password inputs
+ specific types
+ required
+ select age group dropdown
+ 18-30
+ 30-50
+ 50+
+ register button -->
